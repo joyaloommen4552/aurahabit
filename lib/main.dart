@@ -179,6 +179,16 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
               ? AppBar(
                   backgroundColor: Colors.transparent,
                   elevation: 0,
+                  leading: Padding(
+                    padding: const EdgeInsets.only(left: 16.0, top: 8.0, bottom: 8.0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: Image.asset(
+                        'assets/logo.png',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
                   actions: [
                     IconButton(
                       icon: const Icon(
